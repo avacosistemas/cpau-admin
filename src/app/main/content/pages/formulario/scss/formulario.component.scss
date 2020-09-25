@@ -1,0 +1,137 @@
+.component-FORMULARIO{
+    .crud-table{
+        /* @media screen and (max-width:899px) {
+            .mat-header-row, .mat-row {
+                width: max-content;
+            }
+        } */
+
+        .action-cell {
+            width: 360px !important;
+            min-width: 360px !important;
+            max-width: 360px !important;
+        }
+
+        #fromDateHeader,
+        #fromDateCell{
+            width: 115px;
+            min-width: 115px;
+            max-width: 115px;
+        }
+
+        #toDateHeader,
+        #toDateCell{
+            width: 115px;
+            min-width: 115px;
+            max-width: 115px;
+        }
+
+        #inscriptosHeader,
+        #inscriptosCell{
+            width: 115px;
+            min-width: 115px;
+            max-width: 115px;
+        }
+
+        
+        mat-header-cell.checkbox-cell {
+            display: none;
+        }
+        
+        mat-row.mat-row > mat-cell:nth-child(1) {
+            display: none;
+        }
+
+
+    }
+}
+.control-mat-dialog .dynamicFormDiv[name=subForm]{
+    
+    .nameDiv{
+        display: inline-block !important;
+        width:100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    .remarksDiv{
+        display: inline-block !important;
+        width:100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    
+    
+    .minQuotaDiv{
+        display: inline-block !important;
+        width:30% !important;
+        margin-right: 5% !important;
+    }
+    .quotaDiv{
+        display: inline-block !important;
+        width:30% !important;
+        margin-right: 5% !important;
+    }
+    .allowQueueDiv{
+        display: inline-block !important;
+        width:30% !important;
+    }
+
+    .fromDateStringDiv{
+        display: inline-block !important;
+        width:45% !important;
+        margin-right: 10% !important;
+    }
+    .toDateStringDiv{
+        display: inline-block !important;
+        width:45% !important;
+    }
+    
+    .validateUserDiv{
+        display: inline-block !important;
+        width:13% !important;
+        margin-right: 8%!important;
+    }
+    .showUserDataDiv{
+        display: inline-block !important;
+        width:28% !important;
+        margin-right: 5% !important;
+    }
+    .allowUpdatesDiv {
+        display: inline-block !important;
+        width:22% !important;
+        margin-right: 5% !important;
+    }
+    .showTitleDiv{
+        display: inline-block !important;
+        width:15% !important;
+    }
+
+
+
+
+
+
+
+
+
+    .placeDiv{
+        display: inline-block !important;
+        width:30% !important;
+        margin-right: 3% !important;
+    }
+    .dateStringDiv{
+        display: inline-block !important;
+        width:30% !important;
+        max-width: 30% !important;
+        margin-right: 3% !important;
+    }
+
+    .contactDiv{
+        display: inline-block !important;
+        width:34% !important;
+    }
+
+    
+
+    
+}

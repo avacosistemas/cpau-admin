@@ -1,0 +1,82 @@
+.component-BANNER{
+
+    app-search .drop_down {
+        display: none;
+    }
+    .crud-table{
+        /* @media screen and (max-width:899px) {
+            .mat-header-row, .mat-row {
+                width: max-content;
+            }
+        } */
+
+        .action-cell {
+            width: 80px !important;
+            min-width: 80px !important;
+            max-width: 80px !important;
+        }
+        
+        mat-header-cell.checkbox-cell {
+            display: none;
+        }
+        
+        mat-row.mat-row > mat-cell:nth-child(1) {
+            display: none;
+        }
+
+
+    }
+}
+.control-mat-dialog .dynamicFormDiv[name=subForm]{
+   
+    .alternativeTextDiv{
+        display: inline-block !important;
+        width:78% !important;
+        margin-right: 2% !important;
+        
+    }
+
+    .displayOrderDiv{
+        display: inline-block !important;
+        width:20% !important;
+    }
+    
+    .isMainPageDiv {
+        display: inline-block !important;
+        width:33% !important;
+        min-width: 33% !important;
+        max-width: 33% !important;
+    }
+
+    .isNewsletterDiv {
+        display: inline-block !important;
+        width:33% !important;
+        min-width: 33% !important;
+        max-width: 33% !important;
+    }
+
+    .isSectionDiv {
+        display: inline-block !important;
+        width:33% !important;
+        min-width: 33% !important;
+        max-width: 33% !important;
+    }
+    
+
+}
+
+#info_title > label:nth-child(1) > div:nth-child(1), #agenda_title > label:nth-child(1) > div:nth-child(1) {
+	display:none;
+}
+
+#info_title > label:nth-child(1) > span:nth-child(2), #agenda_title > label:nth-child(1) > span:nth-child(2) {
+    font-size: 16px;
+    color: gray;
+    font-weight: bolder;
+}
+
+.info_titleDiv > div:nth-child(2), .agenda_titleDiv > div:nth-child(2) {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 3px;
+}

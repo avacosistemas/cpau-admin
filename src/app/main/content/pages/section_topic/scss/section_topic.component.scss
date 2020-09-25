@@ -1,0 +1,58 @@
+.component-SECTION_TOPIC{
+    app-search .drop_down{
+        display: none;
+    }
+    .crud-table{
+        
+        .action-cell {
+            width: 120px !important;
+            min-width: 120px !important;
+            max-width: 120px !important;
+        }
+
+        #nameHeader,
+        #nameCell{
+            width: 180px;
+            min-width: 180px;
+            max-width: 180px;
+        }
+
+        #publishedHeader,
+        #publishedCell{
+            width: 70px;
+            min-width: 70px;
+            max-width: 70px;
+        }
+
+        mat-header-cell.checkbox-cell {
+            display: none;
+        }
+        
+        mat-row.mat-row > mat-cell:nth-child(1) {
+            display: none;
+        }
+
+    }
+}
+.control-mat-dialog .dynamicFormDiv[name=subForm]{
+    
+  
+
+   
+}
+
+#info_title > label:nth-child(1) > div:nth-child(1), #agenda_title > label:nth-child(1) > div:nth-child(1) {
+	display:none;
+}
+
+#info_title > label:nth-child(1) > span:nth-child(2), #agenda_title > label:nth-child(1) > span:nth-child(2) {
+    font-size: 16px;
+    color: gray;
+    font-weight: bolder;
+}
+
+.info_titleDiv > div:nth-child(2), .agenda_titleDiv > div:nth-child(2) {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 3px;
+}

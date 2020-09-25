@@ -1,0 +1,177 @@
+import { CONTROL_TYPE } from '../../../../../modules/fwk/core/model/dynamic-form/dynamic-field';
+
+
+
+export const MAILING_CREATE_BEHAVIOR: any[] = 
+[
+  {
+    fieldKey: 'to',
+    condition: {
+      if: [
+        {
+          key: 'to',
+          value: 'ContactList',
+        } 
+      ],
+      then: [
+        {
+          key: 'contactListId',
+          controlType: 'select'
+        },
+        {
+          key: 'matriculadoEstadosIds',
+          controlType: 'hidden'
+        },
+         {
+          key: 'matriculadoActividadesIds',
+          controlType: 'hidden'
+        }
+      ],
+      else: [
+        
+      ]            
+    }
+  },
+  {
+    fieldKey: 'to',
+    condition: {
+      if: [
+        {
+          key: 'to',
+          value: 'MatriculadoEstados',
+        } 
+      ],
+      then: [
+        {
+          key: 'contactListId',
+          controlType: 'hidden'
+        },
+        {
+          key: 'matriculadoEstadosIds',
+          controlType: 'pick-list'
+        },
+         {
+          key: 'matriculadoActividadesIds',
+          controlType: 'hidden'
+        }
+      ],
+      else: [
+        
+      ]            
+    }
+  },
+  {
+      fieldKey: 'to',
+      condition: {
+        if: [
+          {
+            key: 'to',
+            value: 'MatriculadoActividades',
+          } 
+        ],
+        then: [
+          {
+            key: 'contactListId',
+            controlType: 'hidden'
+          },
+          {
+            key: 'matriculadoEstadosIds',
+            controlType: 'hidden'
+          },
+           {
+            key: 'matriculadoActividadesIds',
+            controlType: 'pick-list'
+          }
+        ],
+        else: [
+          
+        ]            
+      }
+  },
+  {
+    fieldKey: 'content',
+    condition: {
+      if: [
+        {
+          key: 'content',
+          value: 'Boletin',
+        } 
+      ],
+      then: [
+        {
+          key: 'boletinId',
+          controlType: 'select'
+        },
+        {
+          key: 'pageId',
+          controlType: 'hidden'
+        },
+         {
+          key: 'url',
+          controlType: 'hidden'
+        }
+      ],
+      else: [
+        
+      ]            
+    }
+  },
+  {
+    fieldKey: 'content',
+    condition: {
+      if: [
+        {
+          key: 'content',
+          value: 'Page',
+        } 
+      ],
+      then: [
+        {
+          key: 'boletinId',
+          controlType: 'hidden'
+        },
+        {
+          key: 'pageId',
+          controlType: 'select'
+        },
+        {
+          key: 'url',
+          controlType: 'hidden'
+        }
+      ],
+      else: [
+        
+      ]            
+    }
+  },
+  {
+    fieldKey: 'content',
+    condition: {
+      if: [
+        {
+          key: 'content',
+          value: 'URL',
+        } 
+      ],
+      then: [
+        {
+          key: 'boletinId',
+          controlType: 'hidden'
+        },
+        {
+          key: 'pageId',
+          controlType: 'hidden'
+        },
+         {
+          key: 'url',
+          controlType: 'import_image'
+        }
+      ],
+      else: [
+        
+      ]            
+    }
+  },
+];
+
+

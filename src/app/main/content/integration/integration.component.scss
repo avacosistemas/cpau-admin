@@ -1,0 +1,48 @@
+@import "src/@fuse/scss/fuse";
+@import "../../content/pages/formulario/scss/formulario.component.scss";
+@import "../../content/pages/formulario/scss/formulario.component.scss";
+@import "../../content/pages/contenido/scss/contenido.component.scss";
+@import "../../content/pages/mailing/scss/mailing.component.scss";
+@import "../../content/pages/seccion/scss/seccion.component.scss";
+@import "../../content/pages/producto_externo/scss/producto_externo.component.scss";
+@import "../../content/pages/banner_campaing/scss/banner_campaing.component.scss";
+@import "../../content/pages/boletin/scss/boletin.component.scss";
+@import "../../content/pages/boletin_contenido/scss/boletinContenido.component.scss";
+@import "../../content/pages/imagen/scss/imagen.component.scss";
+@import "../../content/pages/content_image/scss/content_image.component.scss";
+@import "../../content/pages/section_content/scss/section_content.component.scss";
+@import "../../content/pages/section_topic/scss/section_topic.component.scss";
+@import "../../content/pages/opcion/scss/opcion.component.scss";
+@import "../../content/pages/banner/scss/banner.component.scss";
+@import "../../content/pages/campo/scss/campo.component.scss";
+@import "../../content/pages/form_response/scss/formResponse.component.scss";
+
+crud{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mat-list-text {
+    font-size: 12px;
+}
+
+.mat-green-300-bg {
+    background-color: #3400FF !important;
+    color: white !important;
+}
+
+.mat-green-300-bg[disabled] {
+    background-color: #e7e0ff !important;
+    color: rgba(0, 0, 0, 0.26) !important;
+}
+
+.import-image-button {
+    width: 40px!important;
+    min-width: 40px!important;
+    max-width: 40px!important;
+}
+

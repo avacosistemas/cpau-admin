@@ -1,0 +1,155 @@
+.component-SECCION{
+    .crud-table{
+        /* @media screen and (max-width:899px) {
+            .mat-header-row, .mat-row {
+                width: max-content;
+            }
+        } */
+
+        .action-cell {
+            width: 200px !important;
+            min-width: 200px !important;
+            max-width: 200px !important;
+        }
+
+        #nameHeader,
+        #nameCell{
+            width: 180px;
+            min-width: 180px;
+            max-width: 180px;
+        }
+
+        
+
+        #publishedHeader,
+        #publishedCell{
+            width: 70px;
+            min-width: 70px;
+            max-width: 70px;
+        }
+
+    
+
+
+    }
+}
+.control-mat-dialog .dynamicFormDiv[name=subForm]{
+    
+    /*.nameDiv{
+        display: inline-block !important;
+        max-width: 33% !important;
+        width:33% !important;
+        min-width: 33% !important;
+        margin-right: 2% !important;
+    }*/
+    /*.seNameDiv{
+        display: inline-block !important;
+        width:35% !important;
+        margin-right: 2% !important;
+    }
+
+    
+
+*/
+
+    .titleDiv{
+        display: inline-block !important;
+        width:100% !important;
+        max-width:100% !important;
+        min-width:100% !important;
+    }
+
+    .imageDiv{
+        display: inline-block !important;
+        width:62% !important;
+        max-width:62% !important;
+        min-width:62% !important;
+        margin-right: 3%;
+    }
+
+
+    .publishedDiv{
+        display: inline-block !important;
+        width:15% !important;
+        max-width:15% !important;
+        min-width:15% !important;
+    }
+
+    .allowAnonymousDiv{
+        display: inline-block !important;
+        width:15% !important;
+        max-width:15% !important;
+        min-width:15% !important;
+    }
+
+    .templateIdDiv{
+        display: inline-block !important;
+        width:48% !important;
+        max-width:48% !important;
+        min-width:48% !important;
+        margin-right: 2%;
+    }
+
+    .linkDiv{
+        display: inline-block !important;
+        width:85% !important;
+        max-width:85% !important;
+        min-width:85% !important;
+    }
+
+    .linkTargetDiv{
+        padding-left: 15px;
+        display: inline-block !important;
+        width:15% !important;
+        max-width:15% !important;
+        min-width:15% !important;
+    }
+
+    .import-image-input {
+        width: 86% !important;
+    }
+
+
+    .orderItemsByDiv{
+        display: inline-block !important;
+        width:50% !important;
+        max-width:50% !important;
+        min-width:50% !important;
+    }
+
+    .contactNameDiv{
+        display: inline-block;
+        width:30%;
+        margin-right: 3%;
+    }
+
+    .contactEmailDiv{
+        display: inline-block;
+        width:31%;
+        margin-right: 3%;
+    }
+
+    .contactTelDiv{
+        display: inline-block;
+        width:33%;
+      
+    }
+
+
+}
+
+#info_title > label:nth-child(1) > div:nth-child(1), #agenda_title > label:nth-child(1) > div:nth-child(1) {
+	display:none;
+}
+
+#info_title > label:nth-child(1) > span:nth-child(2), #agenda_title > label:nth-child(1) > span:nth-child(2) {
+    font-size: 16px;
+    color: gray;
+    font-weight: bolder;
+}
+
+.info_titleDiv > div:nth-child(2), .agenda_titleDiv > div:nth-child(2) {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 3px;
+}

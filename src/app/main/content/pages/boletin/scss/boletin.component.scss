@@ -1,0 +1,85 @@
+.component-BOLETIN{
+    .crud-table{
+        /* @media screen and (max-width:899px) {
+            .mat-header-row, .mat-row {
+                width: max-content;
+            }
+        } */
+
+        .action-cell {
+            width: 120px !important;
+            min-width: 120px !important;
+            max-width: 120px !important;
+        }
+
+        #numeroHeader,
+        #numeroCell{
+            width: 115px;
+            min-width: 115px;
+            max-width: 115px;
+        }
+
+        #fechaEnvioStringHeader,
+        #fechaEnvioStringCell{
+            width: 115px;
+            min-width: 115px;
+            max-width: 115px;
+        }
+
+        #especialHeader,
+        #especialCell{
+            width: 115px;
+            min-width: 115px;
+            max-width: 115px;
+        }
+
+        
+        mat-header-cell.checkbox-cell {
+            display: none;
+        }
+        
+        mat-row.mat-row > mat-cell:nth-child(1) {
+            display: none;
+        }
+
+
+    }
+}
+.control-mat-dialog .dynamicFormDiv[name=subForm]{
+    
+    .numeroDiv{
+        display: inline-block !important;
+        width:33% !important;
+        margin-right: 3% !important;
+    }
+    .tituloDiv{
+        display: inline-block !important;
+        width:33% !important;
+        margin-right: 3% !important;
+    }
+    
+    
+    .fechaEnvioStringDiv{
+        display: inline-block !important;
+        max-width:30% !important;
+    }
+
+
+    .publicadoDiv{
+        display: inline-block;
+        width:30%;
+        margin-right: 3%;
+    }
+    .especialDiv{
+        display: inline-block;
+        width:30%;
+        margin-right: 3%;
+    }
+    .notasConCopeteDiv{
+        display: inline-block;
+        width:34%;
+    }
+    
+
+    
+}
