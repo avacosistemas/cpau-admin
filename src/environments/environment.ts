@@ -17,7 +17,8 @@ export const environment = {
     /** URLs of Services **/
 
     /** AUTHENTICATION */
-    AUTHENTICATION_URL:  PREFIX_DOMAIN_API + 'Auth',
+    // AUTHENTICATION_URL:  PREFIX_DOMAIN_API + 'Auth',
+    AUTHENTICATION_URL:  PREFIX_DOMAIN_API + 'user/login',
     AUTHENTICATION_REFRESH_TOKEN_URL:  PREFIX_DOMAIN_API + 'Auth/refresh',
 
     /* Config General URl*/
