@@ -19,6 +19,20 @@
             max-width: 130px;
         }
 
+        #publishDateStringHeader,
+        #publishDateStringCell{
+            width: 150px;
+            min-width: 150px;
+            max-width: 150px;
+        }
+
+        #expirationDateStringHeader,
+        #expirationDateStringCell{
+            width: 130px;
+            min-width: 130px;
+            max-width: 130px;
+        }
+
         mat-header-cell.checkbox-cell {
             display: none;
         }

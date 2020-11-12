@@ -31,7 +31,7 @@ export const SECTION_CONTENT_GRID_DEF: GridDef = {
     ,
     {
       columnDef: 'displayOrder',
-      columnNameKey: 'displayOrder'
+      columnNameKey: 'Orden'
     }
   ],
   sortAllColumns: true,
@@ -42,30 +42,30 @@ export const SECTION_CONTENT_GRID_DEF: GridDef = {
     'displayOrder'
   ],
   actions: [
-    {
-      actionNameKey: 'section_content_grid_def_button_action_bajar',
-      icon: 'arrow_downward',
-      ws: {
-        key: 'section_content_grid_def_button_action_bajar',
-        url: PREFIX_DOMAIN_API + 'SectionContent/bajar',
-        method: 'GET',
-        querystring: {
-          id : 'id'
-        }
-      }
-    },
-    {
-      actionNameKey: 'section_content_grid_def_button_action_subir',
-      icon: 'arrow_upward',
-      ws: {
-        key: 'section_content_grid_def_button_action_subir',
-        url: PREFIX_DOMAIN_API + 'SectionContent/subir',
-        method: 'GET',
-        querystring: {
-          id : 'id'
-        }
-      }
-    },
+    // {
+    //   actionNameKey: 'section_content_grid_def_button_action_bajar',
+    //   icon: 'arrow_downward',
+    //   ws: {
+    //     key: 'section_content_grid_def_button_action_bajar',
+    //     url: PREFIX_DOMAIN_API + 'SectionContent/bajar',
+    //     method: 'GET',
+    //     querystring: {
+    //       id : 'id'
+    //     }
+    //   }
+    // },
+    // {
+    //   actionNameKey: 'section_content_grid_def_button_action_subir',
+    //   icon: 'arrow_upward',
+    //   ws: {
+    //     key: 'section_content_grid_def_button_action_subir',
+    //     url: PREFIX_DOMAIN_API + 'SectionContent/subir',
+    //     method: 'GET',
+    //     querystring: {
+    //       id : 'id'
+    //     }
+    //   }
+    // },
     {
       actionNameKey: 'section_content_grid_def_button_action_marcar_destacado',
       icon: 'blur_on',
@@ -115,5 +115,5 @@ export const SECTION_CONTENT_GRID_DEF: GridDef = {
                   }
     }
  ]
-  
+
 };

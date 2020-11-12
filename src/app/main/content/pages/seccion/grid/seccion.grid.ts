@@ -172,18 +172,29 @@ export const SECCION_GRID_DEF : GridDef = {
           disabled: true
         },
         {
-          key: 'newParentId',
+          key: 'newParent',
           labelKey: 'seccion_create_form_fields_def_field_seccion_mover',
           label: 'Mover a la Sección',
-          controlType: 'select',
+          controlType: 'autocomplete-desplegable',
           options: {
+            transferIdToField: 'newParentId',
             elementLabel: 'nombre',
             elementValue: 'id',
-            fromWs: {
-              url: PREFIX_DOMAIN_API + 'Section/SeccionRuta'
-            }          
+            useNativeFilter: false,
+            selectElementOrCleanField: 'Debe seleccionar un elemento o limpiar el campo'
+          },
+          apiOptions: {
+            queryString: {
+              filter: 'newParent'
+            },
+            defaultShow: 20,
+            url: PREFIX_DOMAIN_API + 'Section/SeccionRuta'
           }
-        }
+        },
+        {
+          key: 'newParentId',
+          controlType: 'hidden'
+        },
       ],
       ws: {
         key: 'seccion_grid_def_button_action_nueva_mover_seccion',

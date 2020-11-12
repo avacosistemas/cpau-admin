@@ -18,6 +18,7 @@ import { CONTENT_IMAGE_DEF } from './content_image/content_image.def';
 import { TAG_SELECTION_DEF } from './tag_selection/tag_selection.def';
 import { MAILING_DEF } from './mailing/mailing.def';
 import { FORM_RESPONSE_DEF } from './form_response/form_response.def';
+import { MODAL_DEF } from './modal/modal.def';
 
 
 export const COMPONENTS: ComponentDef[] = [
@@ -38,6 +39,7 @@ export const COMPONENTS: ComponentDef[] = [
   CONTENT_IMAGE_DEF,
   TAG_SELECTION_DEF,
   MAILING_DEF,
-  FORM_RESPONSE_DEF
+  FORM_RESPONSE_DEF,
+  MODAL_DEF
 ];
 

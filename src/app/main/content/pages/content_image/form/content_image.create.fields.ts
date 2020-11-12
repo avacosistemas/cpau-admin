@@ -12,7 +12,7 @@ export const CONTENT_IMAGE_CREATE_FORM_FIELDS_DEF = [
   {
     key: 'image',
     labelKey: 'SECCION_UPDATE_FORM_FIELDS_DEF_FIELD_imageid',
-    controlType: 'autocomplete',
+    controlType: 'autocomplete-desplegable',
     label: 'Imagen',
     required: true,
     options: {
@@ -26,7 +26,9 @@ export const CONTENT_IMAGE_CREATE_FORM_FIELDS_DEF = [
       queryString: {
         name: 'image'
       },
-      url: PREFIX_DOMAIN_API + 'Image/GetSelectByProp'
+      defaultShow: 20,
+      url: PREFIX_DOMAIN_API + 'Image/GetSelectByProp',
+
     }
   },
 

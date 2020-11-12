@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { AuthGuardService } from '../../../modules/fwk/core/service/security/auth-guard.service';
-import { environment } from 'environments/environment';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { IMAGEN_DEF } from '../pages/imagen/imagen.def';
 import { SECCION_DEF } from './seccion/seccion.def';
@@ -21,103 +20,109 @@ import { TAG_SELECTION_DEF } from './tag_selection/tag_selection.def';
 import { MAILING_DEF } from './mailing/mailing.def';
 import { FORM_RESPONSE_DEF } from './form_response/form_response.def';
 import { IntegrationComponent } from '../integration/integration.component';
+import { MODAL_DEF } from './modal/modal.def';
 
-export const ROUTES: Routes = [  
-    { 
-      path: 'dashboard', 
-      component: DashboardComponent, 
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: IMAGEN_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: SECCION_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: SECTION_CONTENT_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: SECTION_TOPIC_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: BANNER_CAMPAING_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: BANNER_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: BOLETIN_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: FORMULARIO_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: CAMPO_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: OPCION_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: BOLETIN_CONTENIDO_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: INDICE_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: PRODUCTO_EXTERNO_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: CONTENIDO_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: CONTENT_IMAGE_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: TAG_SELECTION_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: MAILING_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    },
-    {
-      path: FORM_RESPONSE_DEF.navigation.url.split('/')[1],
-      component: IntegrationComponent,
-      canActivate: [AuthGuardService]
-    }
+export const ROUTES: Routes = [
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: IMAGEN_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: SECCION_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: SECTION_CONTENT_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: SECTION_TOPIC_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: BANNER_CAMPAING_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: BANNER_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: BOLETIN_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: FORMULARIO_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: CAMPO_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: OPCION_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: BOLETIN_CONTENIDO_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: INDICE_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: PRODUCTO_EXTERNO_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: CONTENIDO_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: CONTENT_IMAGE_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: TAG_SELECTION_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: MAILING_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: FORM_RESPONSE_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  },
+  {
+    path: MODAL_DEF.navigation.url.split('/')[1],
+    component: IntegrationComponent,
+    canActivate: [AuthGuardService]
+  }
 ];
 
 

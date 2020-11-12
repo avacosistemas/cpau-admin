@@ -15,8 +15,8 @@ export const MAILING_CREATE_BEHAVIOR: any[] =
       ],
       then: [
         {
-          key: 'contactListId',
-          controlType: 'select'
+          key: 'contactList',
+          controlType: 'autocomplete-desplegable'
         },
         {
           key: 'matriculadoEstadosIds',
@@ -43,7 +43,7 @@ export const MAILING_CREATE_BEHAVIOR: any[] =
       ],
       then: [
         {
-          key: 'contactListId',
+          key: 'contactList',
           controlType: 'hidden'
         },
         {
@@ -71,7 +71,7 @@ export const MAILING_CREATE_BEHAVIOR: any[] =
         ],
         then: [
           {
-            key: 'contactListId',
+            key: 'contactList',
             controlType: 'hidden'
           },
           {
@@ -99,11 +99,11 @@ export const MAILING_CREATE_BEHAVIOR: any[] =
       ],
       then: [
         {
-          key: 'boletinId',
-          controlType: 'select'
+          key: 'boletin',
+          controlType: 'autocomplete-desplegable'
         },
         {
-          key: 'pageId',
+          key: 'page',
           controlType: 'hidden'
         },
          {
@@ -127,12 +127,12 @@ export const MAILING_CREATE_BEHAVIOR: any[] =
       ],
       then: [
         {
-          key: 'boletinId',
+          key: 'boletin',
           controlType: 'hidden'
         },
         {
-          key: 'pageId',
-          controlType: 'select'
+          key: 'page',
+          controlType: 'autocomplete-desplegable'
         },
         {
           key: 'url',
@@ -155,11 +155,11 @@ export const MAILING_CREATE_BEHAVIOR: any[] =
       ],
       then: [
         {
-          key: 'boletinId',
+          key: 'boletin',
           controlType: 'hidden'
         },
         {
-          key: 'pageId',
+          key: 'page',
           controlType: 'hidden'
         },
          {

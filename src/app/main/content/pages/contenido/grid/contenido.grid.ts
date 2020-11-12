@@ -77,6 +77,14 @@ export const CONTENIDO_GRID_DEF: GridDef = {
       columnNameKey: 'contenido_grid_def_column_allowanonymous'
     },
     {
+      columnDef: 'publishDateString',
+      columnNameKey: 'Fecha Publicación'
+    },
+    {
+      columnDef: 'expirationDateString',
+      columnNameKey: 'Fecha Expiración'
+    },
+    {
       columnDef: 'id',
       key: true,
       columnNameKey: 'contenido_grid_def_column_id'
@@ -86,7 +94,9 @@ export const CONTENIDO_GRID_DEF: GridDef = {
   deleteAction: true,
   displayedColumns: [
     'title',
-    'createDateString'
+    'createDateString',
+    'publishDateString',
+    'expirationDateString'
   ],
   actions: [
     {

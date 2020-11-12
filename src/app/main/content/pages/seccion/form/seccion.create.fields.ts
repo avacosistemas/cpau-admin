@@ -17,5 +17,5 @@ export const SECCION_CREATE_FORM_FIELDS_DEF = [
     type: 'checkbox',
     controlType: 'checkbox'
   }
-    
+
 ];

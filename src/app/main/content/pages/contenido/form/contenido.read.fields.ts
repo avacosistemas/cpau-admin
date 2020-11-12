@@ -67,7 +67,7 @@ export const CONTENIDO_READ_FORM_FIELDS_DEF = [
     key: 'publishDate',
     labelKey: 'CONTENIDO_READ_FORM_FIELDS_DEF_FIELD_publishdate',
     label: 'Fecha de Publicación',
-    type: 'datepicker',
+    type: 'datetimepicker',
     disabled: true,
     controlType: 'textbox'
   },
@@ -75,7 +75,7 @@ export const CONTENIDO_READ_FORM_FIELDS_DEF = [
     key: 'expirationDate',
     labelKey: 'CONTENIDO_READ_FORM_FIELDS_DEF_FIELD_expirationdate',
     label: 'Fecha de Expiración',
-    type: 'datepicker',
+    type: 'datetimepicker',
     disabled: true,
     controlType: 'textbox'
   },
@@ -99,7 +99,7 @@ export const CONTENIDO_READ_FORM_FIELDS_DEF = [
     key: 'eventStartDate',
     labelKey: 'CONTENIDO_READ_FORM_FIELDS_DEF_FIELD_eventstartdate',
     label: 'Fecha Inicio',
-    type: 'datepicker',
+    type: 'datetimepicker',
     disabled: true,
     controlType: 'textbox'
   },

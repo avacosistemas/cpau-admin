@@ -29,7 +29,7 @@ export const CONTENIDO_UPDATE_FORM_FIELDS_DEF = [
   {
     key: 'publishDateString',
     labelKey: 'contenido_create_form_fields_def_field_publishdate',
-    controlType: 'datepicker'
+    controlType: 'datetimepicker'
   },
 
   {
@@ -42,7 +42,7 @@ export const CONTENIDO_UPDATE_FORM_FIELDS_DEF = [
   {
     key: 'expirationDateString',
     labelKey: 'contenido_create_form_fields_def_field_expirationdate',
-    controlType: 'datepicker'
+    controlType: 'datetimepicker'
   },
   {
     key: 'link',
@@ -113,7 +113,7 @@ export const CONTENIDO_UPDATE_FORM_FIELDS_DEF = [
     key: 'eventStartDateString',
     labelKey: 'contenido_create_form_fields_def_field_eventstartdate',
     label: 'Fecha Inicio',
-    controlType: 'datepicker'
+    controlType: 'datetimepicker'
   },
 
   {

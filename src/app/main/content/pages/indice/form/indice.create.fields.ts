@@ -39,7 +39,7 @@ export const INDICE_CREATE_FORM_FIELDS_DEF = [
   {
     key: 'contactList',
     labelKey: 'indice_create_form_fields_def_field_contactlistid',
-    controlType: 'autocomplete',
+    controlType: 'autocomplete-desplegable',
     required: true,
     options: {
       transferIdToField: 'contactListId',
@@ -52,6 +52,7 @@ export const INDICE_CREATE_FORM_FIELDS_DEF = [
       queryString: {
         name: 'contactList'
       },
+      defaultShow: 20,
       url: PREFIX_DOMAIN_API + 'Indice/lista'
     }
   },

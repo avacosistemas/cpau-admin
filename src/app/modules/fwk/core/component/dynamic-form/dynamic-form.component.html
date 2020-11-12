@@ -7,6 +7,9 @@
         <!--app-datepicker [field]="field" [parentForm]="form"></app-datepicker-->
         <app-datepicker-2 [field]="field" [parentForm]="form"></app-datepicker-2>
       </div>
+      <div *ngIf="field.controlType == 'datetimepicker'">
+        <app-datepicker-time [field]="field" [parentForm]="form"></app-datepicker-time>
+      </div>
       <mat-radio-group *ngIf="field.controlType == 'radio-button'" [formControlName]="field.key">
           <mat-radio-button *ngFor="let option of field.options.options" [ngStyle]="{width: getOptionsWidth(field.options.options)}"  name="field.key" value="{{option.value}}">{{option.label}}</mat-radio-button>
       </mat-radio-group>
@@ -81,17 +84,27 @@
                                     [name]="field.key">
           </app-autocomplete>
         </div>
-          <mat-form-field *ngIf="field.controlType == 'select'" [floatLabel]="getFloatLabel(field)">
-          <mat-label *ngIf="field.options && field.options.matLabel">{{field.options.matLabel}}</mat-label>
-          <mat-select (change)="onChangeSelect($event)" placeholder="{{field.label}}" [formControlName]="field.key">
-            <mat-option *ngFor="let data of field.options.fromData" [value]="field.options.elementValue ? data[field.options.elementValue] : data">
-              {{ field.options.elementLabel ? data[field.options.elementLabel] :  data}}
-            </mat-option>
-          </mat-select>
-          <mat-error id="{{field.key}}Error" *ngIf="form.controls[field.key].invalid  ">
-            {{getMessageErrorValidation(field)}}
-          </mat-error>
-      </mat-form-field>
+        <div *ngIf="field.controlType == 'autocomplete-desplegable'">
+          <app-autocomplete-desplegable [config]="field"
+                              [formGroup]="form"
+                                [searchTermInterface]="searchTermInterface(field)"
+                                  [formControlName]="field.key"
+                                    [name]="field.key">
+          </app-autocomplete-desplegable>
+        </div>
+        <div *ngIf="field.controlType === 'select'">
+            <mat-form-field  [floatLabel]="getFloatLabel(field)">
+            <mat-label *ngIf="field.options && field.options.matLabel">{{field.options.matLabel}}</mat-label>
+            <mat-select (change)="onChangeSelect($event)" placeholder="{{field.label}}" [formControlName]="field.key">
+              <mat-option *ngFor="let data of field.options.fromData" [value]="field.options.elementValue ? data[field.options.elementValue] : data">
+                {{ field.options.elementLabel ? data[field.options.elementLabel] :  data}}
+              </mat-option>
+            </mat-select>
+            <mat-error id="{{field.key}}Error" *ngIf="form.controls[field.key].invalid  ">
+              {{getMessageErrorValidation(field)}}
+            </mat-error>
+        </mat-form-field>
+      </div>
       <div *ngIf="field.controlType == 'html_editor'">
         <ckeditor   [formControlName]="field.key" data="{{field.value}}"></ckeditor>
       </div>

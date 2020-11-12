@@ -16,7 +16,7 @@ export const BOLETIN_CONTENIDO_UPDATE_FORM_FIELDS_DEF = [
   {
     key: 'page',
     labelKey: 'boletin_contenido_create_form_fields_def_field_pageid',
-    controlType: 'autocomplete',
+    controlType: 'autocomplete-desplegable',
     required: true,
     options: {
       transferIdToField: 'pageId',
@@ -29,6 +29,7 @@ export const BOLETIN_CONTENIDO_UPDATE_FORM_FIELDS_DEF = [
       queryString: {
         title: 'page'
       },
+      defaultShow: 20,
       url: PREFIX_DOMAIN_API + 'Boletin/contenido'
     }
   },

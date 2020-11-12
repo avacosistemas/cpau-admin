@@ -15,7 +15,6 @@ export const MAILING_CREATE_FORM_FIELDS_DEF = [
       }
     }
   },
-  
   {
     key: 'subject',
     labelKey: 'mailing_create_form_fields_def_field_asunto',
@@ -30,7 +29,6 @@ export const MAILING_CREATE_FORM_FIELDS_DEF = [
     title: 'Destinatarios',
     controlType: 'checkbox'
   },
-
   {
     key: 'to',
     label: 'Destinatarios',
@@ -46,18 +44,28 @@ export const MAILING_CREATE_FORM_FIELDS_DEF = [
       ]
     }
   },
-
   {
-    key: 'contactListId',
+    key: 'contactList',
     labelKey: 'Lista de Contactos',
-    controlType: 'select',
+    controlType: 'autocomplete-desplegable',
     options: {
+      transferIdToField: 'contactListId',
       elementLabel: 'name',
       elementValue: 'id',
-        fromWs: {
-            url: PREFIX_DOMAIN_API + 'ContactList', // REVISAR
-        }
+      useNativeFilter: false,
+      selectElementOrCleanField: 'Debe seleccionar un elemento o limpiar el campo'
+    },
+    apiOptions: {
+      queryString: {
+        name: 'contactList'
+      },
+      defaultShow: 20,
+      url: PREFIX_DOMAIN_API + 'ContactList/GetSelectByProp'
     }
+  },
+  {
+    key: 'contactListId',
+    controlType: 'hidden'
   },
   {
     key: 'matriculadoEstadosIds',
@@ -113,33 +121,54 @@ export const MAILING_CREATE_FORM_FIELDS_DEF = [
     }
   },
 
-  
-
   {
-    key: 'boletinId',
+    key: 'boletin',
     label: 'Boletin',
     labelKey: 'mailing_create_form_fields_def_field_boletin',
-    controlType: 'select',
+    controlType: 'autocomplete-desplegable',
     options: {
-      elementLabel: 'titulo',
+      transferIdToField: 'boletinId',
+      elementLabel: 'name',
       elementValue: 'id',
-      fromWs: {
-        url: PREFIX_DOMAIN_API + 'Boletin', // REVISAR
-      }
+      useNativeFilter: false,
+      selectElementOrCleanField: 'Debe seleccionar un elemento o limpiar el campo'
+    },
+    apiOptions: {
+      queryString: {
+        titulo: 'boletin'
+      },
+      defaultShow: 20,
+      url: PREFIX_DOMAIN_API + 'Boletin/GetSelectByProp'
     }
   },
 
   {
-    key: 'pageId',
+    key: 'boletinId',
+    controlType: 'hidden'
+  },
+
+  {
+    key: 'page',
     labelKey: 'mailing_create_form_fields_def_field_paginasitio',
-    controlType: 'select',
+    controlType: 'autocomplete-desplegable',
     options: {
+      transferIdToField: 'pageId',
       elementLabel: 'name',
       elementValue: 'id',
-      fromWs: {
-        url: PREFIX_DOMAIN_API + 'Boletin/contenido',
-      }
+      useNativeFilter: false,
+      selectElementOrCleanField: 'Debe seleccionar un elemento o limpiar el campo'
+    },
+    apiOptions: {
+      queryString: {
+        name: 'page'
+      },
+      defaultShow: 20,
+      url: PREFIX_DOMAIN_API + 'Boletin/contenido'
     }
+  },
+  {
+    key: 'pageId',
+    controlType: 'hidden'
   },
   {
     key: 'url',

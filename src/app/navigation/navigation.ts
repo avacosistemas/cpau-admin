@@ -1,108 +1,115 @@
 import { environment } from 'environments/environment';
 export const navigation = [
     {
-        'id'      : 'administration',
-        'title'   : 'Menú General',
+        'id': 'administration',
+        'title': 'Menú General',
         'translate': 'NAV.ADMINISTRATION',
-        'type'    : 'group',
+        'type': 'group',
         'children': [
-           
+
             {
-                'title' : 'Gestión de Contenido',
+                'title': 'Gestión de Contenido',
                 'translate': 'NAV.GESTION_CONTENIDOS',
-                'type' : 'collapse',
-                'icon' : 'settings',
-                'children' : [
+                'type': 'collapse',
+                'icon': 'settings',
+                'children': [
                     {
-                        'title' : 'Contenidos',
+                        'title': 'Contenidos',
                         'translate': 'NAV.MENU_CONTENIDOS',
-                        'type' : 'collapse',
-                        'icon' : 'settings',
-                        'children' : [
+                        'type': 'collapse',
+                        'icon': 'settings',
+                        'children': [
                             {
-                                'id'   : 'seccion',
+                                'id': 'seccion',
                                 'title': 'Secciones',
                                 'translate': 'NAV.SECCION.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_SECCIONES,
+                                'type': 'item',
+                                'url': '/' + environment.URL_SECCIONES,
                             },
                             {
-                                'id'   : 'contenido',
+                                'id': 'contenido',
                                 'title': 'Contenidos',
                                 'translate': 'NAV.CONTENIDO.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_CONTENIDOS,
+                                'type': 'item',
+                                'url': '/' + environment.URL_CONTENIDOS,
                             },
                             {
-                                'id'   : 'imagen',
+                                'id': 'imagen',
                                 'title': 'Imágenes',
                                 'translate': 'NAV.IMAGEN.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_IMAGEN,
+                                'type': 'item',
+                                'url': '/' + environment.URL_IMAGEN,
                             },
                             {
-                                'id'   : 'productoExterno',
+                                'id': 'productoExterno',
                                 'title': 'Productos',
                                 'translate': 'NAV.PRODUCTOEXTERNO.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_PRODUCTO_EXTERNO,
+                                'type': 'item',
+                                'url': '/' + environment.URL_PRODUCTO_EXTERNO,
                             },
                         ]
                     },
                     {
-                        'title' : 'Newsletter',
+                        'title': 'Newsletter',
                         'translate': 'NAV.MENU_BOLETINES',
-                        'type' : 'collapse',
-                        'icon' : 'settings',
-                        'children' : [
+                        'type': 'collapse',
+                        'icon': 'settings',
+                        'children': [
                             {
-                                'id'   : 'boletin',
+                                'id': 'boletin',
                                 'title': 'Boletínes',
                                 'translate': 'NAV.BOLETIN.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_BOLETIN,
+                                'type': 'item',
+                                'url': '/' + environment.URL_BOLETIN,
                             },
                             {
-                                'id'   : 'indice',
+                                'id': 'indice',
                                 'title': 'Índices',
                                 'translate': 'NAV.INDICE.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_INDICE,
+                                'type': 'item',
+                                'url': '/' + environment.URL_INDICE,
                             },
                             {
-                                'id'   : 'mailing',
+                                'id': 'mailing',
                                 'title': 'Mailing',
                                 'translate': 'NAV.MAILING.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_MAILING,
+                                'type': 'item',
+                                'url': '/' + environment.URL_MAILING,
                             },
                         ]
                     },
                     {
-                        'title' : 'Herramientas',
+                        'title': 'Herramientas',
                         'translate': 'NAV.MENU_HERRAMIENTAS',
-                        'type' : 'collapse',
-                        'icon' : 'settings',
-                        'children' : [
+                        'type': 'collapse',
+                        'icon': 'settings',
+                        'children': [
                             {
-                                'id'   : 'formulario',
+                                'id': 'formulario',
                                 'title': 'Formularios',
                                 'translate': 'NAV.FORMULARIO.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_FORMULARIO,
+                                'type': 'item',
+                                'url': '/' + environment.URL_FORMULARIO,
                             },
                             {
-                                'id'   : 'publicidad',
+                                'id': 'publicidad',
                                 'title': 'Publicidades',
                                 'translate': 'NAV.PUBLICIDAD.TITLE',
-                                'type' : 'item',
-                                'url'  : '/' + environment.URL_PUBLICIDAD,
+                                'type': 'item',
+                                'url': '/' + environment.URL_PUBLICIDAD,
                             },
+                            {
+                                'id': 'abmModal',
+                                'title': 'ABM Modal',
+                                'translate': 'NAV.ABMMODAL.TITLE',
+                                'type': 'item',
+                                'url': '/' + environment.URL_ABM_MODAL,
+                            }
                         ]
                     },
                 ]
             },
-            
+
         ]
     }
 ];
