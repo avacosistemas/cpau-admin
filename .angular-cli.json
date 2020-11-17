@@ -22,8 +22,6 @@
                 "styles.scss"
             ],
             "scripts": [
-                "app/lib/ckeditor/ckeditor.js",
-                "app/lib/ckfinder/ckfinder.js"
             ],
             "environmentSource": "environments/environment.ts",
             "environments": {
